@@ -1,7 +1,10 @@
 #!/usr/bin/env python
 
-import requests
-import argparse
+import requests, argparse, os
+
+token = os.getenv('INVESTIGATE_TOKEN', False)
+
+#takes a single domain as its argument
 
 
 parser = argparse.ArgumentParser(description='Check a domain\'s coocurrences for malicious status')
@@ -17,7 +20,7 @@ initial_query = args.domain
 
 url='https://investigate.api.opendns.com/recommendations/name/{0}.json'.format(initial_query)
 
-auth_headers = {'Authorization' : 'Bearer INVESTIGATE_TOKEN_HERE'} 
+auth_headers = {'Authorization' : 'Bearer '+ token} 
 
 q = requests.get(url, headers=auth_headers) #get co-occurrences for domain
 
@@ -50,3 +53,4 @@ elif output['found'] == True:
             print
         else:
             print "something went wrong"
+            
