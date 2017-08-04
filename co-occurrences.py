@@ -18,7 +18,7 @@ print
 
 initial_query = args.domain
 
-url='https://investigate.api.opendns.com/recommendations/name/{0}.json'.format(initial_query)
+url='https://investigate.api.umbrella.com/recommendations/name/{0}.json'.format(initial_query)
 
 auth_headers = {'Authorization' : 'Bearer '+ token} 
 
@@ -36,7 +36,7 @@ elif output['found'] == True:
     for i in range(len(pfs2)): 
         
         final_cooccurrences = pfs2[i][0] #create final list of co-occurring domains
-        url2 = 'https://investigate.api.opendns.com/domains/categorization/{0}'.format(final_cooccurrences)
+        url2 = 'https://investigate.api.umbrella.com/domains/categorization/{0}'.format(final_cooccurrences)
         domain_status = requests.get(url2, headers=auth_headers)
         print "Co-occuring domain:", final_cooccurrences
         if domain_status.json()[final_cooccurrences]['status'] == 0:
@@ -53,4 +53,3 @@ elif output['found'] == True:
             print
         else:
             print "something went wrong"
-            

@@ -10,7 +10,7 @@ if (!token) {
 
 request({
   method: 'GET',
-  url: 'https://investigate.api.opendns.com/domains/categorization/amazon.com',
+  url: 'https://investigate.api.umbrella.com/domains/categorization/amazon.com',
   headers: {
     'Authorization': 'Bearer ' + token
   }
@@ -23,7 +23,7 @@ request({
 
 request({
   method: 'POST',
-  url: 'https://investigate.api.opendns.com/domains/categorization/ ',
+  url: 'https://investigate.api.umbrella.com/domains/categorization/ ',
   headers: {
     'Authorization': 'Bearer ' + token
   },
@@ -37,7 +37,7 @@ request({
 
 request({
   method: 'GET',
-  url: 'https://investigate.api.opendns.com/domains/categorization/amazon.com?showLabels',
+  url: 'https://investigate.api.umbrella.com/domains/categorization/amazon.com?showLabels',
   headers: {
     'Authorization': 'Bearer ' + token
   }
@@ -50,7 +50,7 @@ request({
 
 request({
   method: 'GET',
-  url: 'https://investigate.api.opendns.com/domains/categories',
+  url: 'https://investigate.api.umbrella.com/domains/categories',
   headers: {
     'Authorization': 'Bearer ' + token
   }
@@ -63,7 +63,7 @@ request({
 
 request({
   method: 'GET',
-  url: 'https://investigate.api.opendns.com/domains/score/example.com',
+  url: 'https://investigate.api.umbrella.com/domains/score/example.com',
   headers: {
     'Authorization': 'Bearer ' + token
   }
@@ -76,7 +76,7 @@ request({
 
 request({
   method: 'POST',
-  url: 'https://investigate.api.opendns.com/domains/score/',
+  url: 'https://investigate.api.umbrella.com/domains/score/',
   headers: {
     'Authorization': 'Bearer ' + token
   },
@@ -90,7 +90,7 @@ request({
 
 request({
   method: 'GET',
-  url: 'https://investigate.api.opendns.com/recommendations/name/www.internetbadguys.com.json',
+  url: 'https://investigate.api.umbrella.com/recommendations/name/www.internetbadguys.com.json',
   headers: {
     'Authorization': 'Bearer ' + token
   },
@@ -104,7 +104,7 @@ request({
 
 request({
   method: 'GET',
-  url: 'https://investigate.api.opendns.com/links/name/example.com.json',
+  url: 'https://investigate.api.umbrella.com/links/name/example.com.json',
   headers: {
     'Authorization': 'Bearer ' + token
   }
@@ -117,7 +117,7 @@ request({
 
 request({
   method: 'GET',
-  url: 'https://investigate.api.opendns.com/security/name/www.internetbadguys.com.json',
+  url: 'https://investigate.api.umbrella.com/security/name/www.internetbadguys.com.json',
   headers: {
     'Authorization': 'Bearer ' + token
   },
@@ -130,7 +130,7 @@ request({
 
 request({
   method: 'GET',
-  url: 'https://investigate.api.opendns.com/domains/www.internetbadguys.com/latest_tags',
+  url: 'https://investigate.api.umbrella.com/domains/www.internetbadguys.com/latest_tags',
   headers: {
     'Authorization': 'Bearer ' + token
   }
@@ -143,7 +143,7 @@ request({
 
 request({
   method: 'GET',
-  url: 'https://investigate.api.opendns.com/dnsdb/name/a/homestarrunner.com.json',
+  url: 'https://investigate.api.umbrella.com/dnsdb/name/a/homestarrunner.com.json',
   headers: {
     'Authorization': 'Bearer ' + token
   }
@@ -156,7 +156,7 @@ request({
 
 request({
   method: 'GET',
-  url: 'https://investigate.api.opendns.com/dnsdb/ip/a/208.67.222.222.json',
+  url: 'https://investigate.api.umbrella.com/dnsdb/ip/a/208.67.222.222.json',
   headers: {
     'Authorization': 'Bearer ' + token
   }
@@ -169,7 +169,7 @@ request({
 
 request({
   method: 'GET',
-  url: 'https://investigate.api.opendns.com/ips/208.67.222.222/latest_domains',
+  url: 'https://investigate.api.umbrella.com/ips/208.67.222.222/latest_domains',
   headers: {
     'Authorization': 'Bearer ' + token
   }

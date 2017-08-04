@@ -15,7 +15,7 @@ headers = {
   :authorization => 'Bearer ' + token
 }
 
-response = RestClient.get 'https://investigate.api.opendns.com/domains/categorization/amazon.com', headers
+response = RestClient.get 'https://investigate.api.umbrella.com/domains/categorization/amazon.com', headers
 puts "domains/categorization: " + response
 
 
@@ -30,7 +30,7 @@ headers = {
   :authorization => 'Bearer ' + token
 }
 
-response = RestClient.post 'https://investigate.api.opendns.com/domains/categorization/ ', values, headers
+response = RestClient.post 'https://investigate.api.umbrella.com/domains/categorization/ ', values, headers
 puts "domains/categorization(POST): " + response
 
 
@@ -40,7 +40,7 @@ headers = {
   :authorization => 'Bearer ' + token
 }
 
-response = RestClient.get 'https://investigate.api.opendns.com/domains/categorization/amazon.com?showLabels', headers
+response = RestClient.get 'https://investigate.api.umbrella.com/domains/categorization/amazon.com?showLabels', headers
 puts "domains/categorization?showLabels: " + response
 
 
@@ -50,7 +50,7 @@ headers = {
   :authorization => 'Bearer ' + token
 }
 
-response = RestClient.get 'https://investigate.api.opendns.com/domains/categories', headers
+response = RestClient.get 'https://investigate.api.umbrella.com/domains/categories', headers
 puts "domains/categories: " + response
 
 
@@ -60,7 +60,7 @@ headers = {
   :authorization => 'Bearer ' + token
 }
 
-response = RestClient.get 'https://investigate.api.opendns.com/domains/score/example.com', headers
+response = RestClient.get 'https://investigate.api.umbrella.com/domains/score/example.com', headers
 puts "domains/score: " + response
 
 
@@ -76,7 +76,7 @@ headers = {
   :authorization => 'Bearer ' + token
 }
 
-response = RestClient.post 'https://investigate.api.opendns.com/domains/score/', values, headers
+response = RestClient.post 'https://investigate.api.umbrella.com/domains/score/', values, headers
 puts "domains/score(POST): " + response
 
 
@@ -86,7 +86,7 @@ headers = {
   :authorization => 'Bearer ' + token
 }
 
-response = RestClient.get 'https://investigate.api.opendns.com/recommendations/name/www.internetbadguys.com.json', headers
+response = RestClient.get 'https://investigate.api.umbrella.com/recommendations/name/www.internetbadguys.com.json', headers
 puts "recommendations/name: " + response
 
 
@@ -96,7 +96,7 @@ headers = {
   :authorization => 'Bearer ' + token
 }
 
-response = RestClient.get 'https://investigate.api.opendns.com/links/name/homestarrunner.com.json', headers
+response = RestClient.get 'https://investigate.api.umbrella.com/links/name/homestarrunner.com.json', headers
 puts "links/name: " + response
 
 
@@ -106,7 +106,7 @@ headers = {
   :authorization => 'Bearer ' + token
 }
 
-response = RestClient.get 'https://investigate.api.opendns.com/security/name/www.internetbadguys.com.json', headers
+response = RestClient.get 'https://investigate.api.umbrella.com/security/name/www.internetbadguys.com.json', headers
 puts "security/name: " + response
 
 
@@ -116,7 +116,7 @@ headers = {
   :authorization => 'Bearer ' + token
 }
 
-response = RestClient.get 'https://investigate.api.opendns.com/domains/www.internetbadguys.com/latest_tags', headers
+response = RestClient.get 'https://investigate.api.umbrella.com/domains/www.internetbadguys.com/latest_tags', headers
 puts "latest_tags: " + response
 
 
@@ -126,7 +126,7 @@ headers = {
   :authorization => 'Bearer ' + token
 }
 
-response = RestClient.get 'https://investigate.api.opendns.com/dnsdb/name/a/homestarrunner.com.json', headers
+response = RestClient.get 'https://investigate.api.umbrella.com/dnsdb/name/a/homestarrunner.com.json', headers
 puts "dnsdb/name: " + response
 
 
@@ -138,7 +138,7 @@ headers = {
   :authorization => 'Bearer ' + token
 }
 
-response = RestClient.get 'https://investigate.api.opendns.com/dnsdb/ip/a/208.67.222.222.json', headers
+response = RestClient.get 'https://investigate.api.umbrella.com/dnsdb/ip/a/208.67.222.222.json', headers
 puts "dnsdb/ip: " + response
 
 
@@ -148,5 +148,5 @@ headers = {
   :authorization => 'Bearer ' + token
 }
 
-response = RestClient.get 'https://investigate.api.opendns.com/ips/208.67.222.222/latest_domains', headers
+response = RestClient.get 'https://investigate.api.umbrella.com/ips/208.67.222.222/latest_domains', headers
 puts "latest_domains: " + response
