@@ -12,7 +12,7 @@ if($token == false)
 
 $ch = curl_init();
 
-curl_setopt($ch, CURLOPT_URL, "https://investigate.api.opendns.com/domains/categorization/amazon.com");
+curl_setopt($ch, CURLOPT_URL, "https://investigate.api.umbrella.com/domains/categorization/amazon.com");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 curl_setopt($ch, CURLOPT_HEADER, FALSE);
 
@@ -30,7 +30,7 @@ echo("domains/categorization: " . "$response\n");
 
 $ch = curl_init();
 
-curl_setopt($ch, CURLOPT_URL, "https://investigate.api.opendns.com/domains/categorization/");
+curl_setopt($ch, CURLOPT_URL, "https://investigate.api.umbrella.com/domains/categorization/");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 curl_setopt($ch, CURLOPT_HEADER, FALSE);
 
@@ -55,7 +55,7 @@ echo("domains/categorization(POST): " . "$response\n");
 
 $ch = curl_init();
 
-curl_setopt($ch, CURLOPT_URL, "https://investigate.api.opendns.com/domains/categorization/amazon.com?showLabels");
+curl_setopt($ch, CURLOPT_URL, "https://investigate.api.umbrella.com/domains/categorization/amazon.com?showLabels");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 curl_setopt($ch, CURLOPT_HEADER, FALSE);
 
@@ -73,7 +73,7 @@ echo("domains/categorization?showLabels: " . "$response\n");
 
 $ch = curl_init();
 
-curl_setopt($ch, CURLOPT_URL, "https://investigate.api.opendns.com/domains/categories");
+curl_setopt($ch, CURLOPT_URL, "https://investigate.api.umbrella.com/domains/categories");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 curl_setopt($ch, CURLOPT_HEADER, FALSE);
 
@@ -91,7 +91,7 @@ echo("domains/categories: " . "$response\n");
 
 $ch = curl_init();
 
-curl_setopt($ch, CURLOPT_URL, "https://investigate.api.opendns.com/domains/score/example.com");
+curl_setopt($ch, CURLOPT_URL, "https://investigate.api.umbrella.com/domains/score/example.com");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 curl_setopt($ch, CURLOPT_HEADER, FALSE);
 
@@ -109,7 +109,7 @@ echo("domains/score: " . "$response\n");
 
 $ch = curl_init();
 
-curl_setopt($ch, CURLOPT_URL, "https://investigate.api.opendns.com/domains/score/");
+curl_setopt($ch, CURLOPT_URL, "https://investigate.api.umbrella.com/domains/score/");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 curl_setopt($ch, CURLOPT_HEADER, FALSE);
 
@@ -135,7 +135,7 @@ echo("domains/score(POST): " . "$response\n");
 
 $ch = curl_init();
 
-curl_setopt($ch, CURLOPT_URL, "https://investigate.api.opendns.com/recommendations/name/www.internetbadguys.com.json");
+curl_setopt($ch, CURLOPT_URL, "https://investigate.api.umbrella.com/recommendations/name/www.internetbadguys.com.json");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 curl_setopt($ch, CURLOPT_HEADER, FALSE);
 
@@ -153,7 +153,7 @@ echo("recommendations/name: " . "$response\n");
 
 $ch = curl_init();
 
-curl_setopt($ch, CURLOPT_URL, "https://investigate.api.opendns.com/links/name/homestarrunner.com.json");
+curl_setopt($ch, CURLOPT_URL, "https://investigate.api.umbrella.com/links/name/homestarrunner.com.json");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 curl_setopt($ch, CURLOPT_HEADER, FALSE);
 
@@ -171,7 +171,7 @@ echo("links/name: " . "$response\n");
 
 $ch = curl_init();
 
-curl_setopt($ch, CURLOPT_URL, "https://investigate.api.opendns.com/security/name/www.internetbadguys.com.json");
+curl_setopt($ch, CURLOPT_URL, "https://investigate.api.umbrella.com/security/name/www.internetbadguys.com.json");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 curl_setopt($ch, CURLOPT_HEADER, FALSE);
 
@@ -189,7 +189,7 @@ echo("security/name: " . "$response\n");
 
 $ch = curl_init();
 
-curl_setopt($ch, CURLOPT_URL, "https://investigate.api.opendns.com/domains/www.internetbadguys.com/latest_tags");
+curl_setopt($ch, CURLOPT_URL, "https://investigate.api.umbrella.com/domains/www.internetbadguys.com/latest_tags");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 curl_setopt($ch, CURLOPT_HEADER, FALSE);
 
@@ -207,7 +207,7 @@ echo("latest_tags: " . "$response\n");
 
 $ch = curl_init();
 
-curl_setopt($ch, CURLOPT_URL, "https://investigate.api.opendns.com/dnsdb/name/a/homestarrunner.com.json");
+curl_setopt($ch, CURLOPT_URL, "https://investigate.api.umbrella.com/dnsdb/name/a/homestarrunner.com.json");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 curl_setopt($ch, CURLOPT_HEADER, FALSE);
 
@@ -225,7 +225,7 @@ echo("dnsdb/name: " . "$response\n");
 
 $ch = curl_init();
 
-curl_setopt($ch, CURLOPT_URL, "https://investigate.api.opendns.com/dnsdb/ip/a/208.67.222.222.json");
+curl_setopt($ch, CURLOPT_URL, "https://investigate.api.umbrella.com/dnsdb/ip/a/208.67.222.222.json");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 curl_setopt($ch, CURLOPT_HEADER, FALSE);
 
@@ -243,7 +243,7 @@ echo("dnsdb/ip: " . "$response\n");
 
 $ch = curl_init();
 
-curl_setopt($ch, CURLOPT_URL, "https://investigate.api.opendns.com/ips/208.67.222.222/latest_domains");
+curl_setopt($ch, CURLOPT_URL, "https://investigate.api.umbrella.com/ips/208.67.222.222/latest_domains");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 curl_setopt($ch, CURLOPT_HEADER, FALSE);
 
